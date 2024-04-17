@@ -6,17 +6,57 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="app_container">
+    <div class="app_bg_container">
         <img class="hero_img" src="assets/hero_img.jpg"></img>
         <div class="transparent_div"></div>
         <div class="bg_holder"></div>
     </div>
+
+    <div class="app_container">
+        <div class="margin"></div>
+        <div class="app_content">
+            <div class="transparent_div_inner"></div>
+            <div class="title_div">
+                <img class="keyart" src="assets/movie-boxart.jpg"></img>
+                <div class="title_inner_div">
+                    <h1 class="title">Toy Story 4</h1>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="margin"></div>
+
+    </div>
     <style>
+
+        body {
+            margin: 0px;
+        }
         .transparent_div {
             height: 525px;
         }
 
+        .transparent_div_inner {
+            height: 220px;
+        }
+
+        .title_div {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+
         .app_container {
+            position: absolute;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            height: 1525px;
+
+        }
+        .app_bg_container {
+            position: absolute;
             width: 100vw;
         }
 
@@ -24,12 +64,38 @@
             position: absolute;
             z-index: -1;
             width: 100vw;
+            background-size: cover;
         }
+
+        
 
         .bg_holder {
             background-color: rgb(5, 116, 219);
             height: 1000px;
         }
+        
+        .margin {
+            width: 15%;
+        }
+        .app_content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .title_inner_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            flex: 1;
+        }
+
+        .title {
+            color: white;
+            font-size: 4em;
+            padding-left: 30px;
+            padding-bottom: 63px;
+        }
+        
     </style>
 </body>
 </html>
