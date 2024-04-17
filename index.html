@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app_container">
+        <img class="hero_img" src="assets/hero_img.jpg"></img>
+        <div class="transparent_div"></div>
+        <div class="bg_holder"></div>
+    </div>
+    <style>
+        .transparent_div {
+            height: 525px;
+        }
+
+        .app_container {
+            width: 100vw;
+        }
+
+        .hero_img {
+            position: absolute;
+            z-index: -1;
+            width: 100vw;
+        }
+
+        .bg_holder {
+            background-color: rgb(5, 116, 219);
+            height: 1000px;
+        }
+    </style>
+</body>
+</html>
