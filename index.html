@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="app_bg_container">
-        <img class="hero_img" src="assets/hero_img.jpg"></img>
-        <div class="transparent_div"></div>
-        <div class="bg_holder"></div>
+      <img class="hero_img" src="assets/hero_img.jpg" />
+      <div class="transparent_div"></div>
+      <div class="bg_holder"></div>
     </div>
 
     <div class="app_container">
-        <div class="margin"></div>
-        <div class="app_content">
-            <div class="transparent_div_inner"></div>
-            <div class="title_div">
-                <img class="keyart" src="assets/movie-boxart.jpg"></img>
-                <div class="title_inner_div">
-                    <h1 class="title">Toy Story 4</h1>
-                </div>
-                
-            </div>
-
+      <div class="margin"></div>
+      <div class="app_content">
+        <div class="transparent_div_inner"></div>
+        <div class="title_div">
+          <img class="keyart" src="assets/movie-boxart.jpg" />
+          <div class="title_inner_div">
+            <h1 class="title">Toy Story 4</h1>
+          </div>
         </div>
-        <div class="margin"></div>
+        <div class="transparent_sec"></div>
+        <div class="synopsis">
+          <h1 class="synopsis_title">Synopsis</h1>
+          <p class="synopsis_content">
+            Woody, Buzz Lightyear and the rest of the gang embark on a road trip
+            with Bonnie and a new toy named Forky. The adventurous journey turns
+            into an unexpected reunion as Woody's slight detour leads him to his
+            long-lost friend Bo Peep. As Woody and Bo discuss the old days, they
+            soon start to realize that they're two worlds apart when it comes to
+            what they want from life as a toy.
+          </p>
+        </div>
 
+        <div class="synopsis">
+          <h1 class="synopsis_title">Characters</h1>
+          <div class="character_profiles">
+            <div class="charatcer_cards">
+              <h1 class="charcter_bio">Woody</h1>
+              <div class="char_content">
+                <img class="character_pfp" src="assets/character_woody.jpg" />
+                <h2 class="va_credits">Played by Tom Hanks</h2>
+                <p class="char_text">
+                  Woody and the gang go on a road trip with new toy Forky, who's
+                  convinced he's trash and doesn't yet understand his role in
+                  the world. Along the way, Woody is unexpectedly reunited with
+                  independent spirit Bo Peep and finds himself faced with a
+                  decision, and a future, he never imagined.
+                </p>
+              </div>
+            </div>
+            <div class="charatcer_cards"></div>
+            <div class="charatcer_cards"></div>
+            <div class="charatcer_cards"></div>
+          </div>
+        </div>
+      </div>
+      <div class="margin"></div>
     </div>
     <style>
+      body {
+        margin: 0px;
+      }
 
-        body {
-            margin: 0px;
-        }
-        .transparent_div {
-            height: 525px;
-        }
+      .transparent_div {
+        height: 525px;
+      }
 
-        .transparent_div_inner {
-            height: 220px;
-        }
+      .transparent_div_inner {
+        height: 220px;
+      }
 
-        .title_div {
-            height: 500px;
-            display: flex;
-            flex-direction: row;
-        }
+      .transparent_sec {
+        height: 30px;
+      }
 
-        .app_container {
-            position: absolute;
-            width: 100vw;
-            display: flex;
-            flex-direction: row;
-            height: 1525px;
+      .title_div {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+      }
 
-        }
-        .app_bg_container {
-            position: absolute;
-            width: 100vw;
-        }
+      .synopsis_title {
+        color: #8d050c;
+        font-size: 45px;
+        border-bottom: 3px solid #8cb9aa;
+        padding-bottom: 5px;
+      }
 
-        .hero_img {
-            position: absolute;
-            z-index: -1;
-            width: 100vw;
-            background-size: cover;
-        }
+      .synopsis_content {
+        color: white;
+        font-size: 26px;
+        font-weight: lighter;
+      }
+      /*parent div */
+      .character_profiles {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-        
+      /*child div */
+      .charatcer_cards {
+        flex: 1 0 40%;
+        margin: 5px;
 
-        .bg_holder {
-            background-color: rgb(5, 116, 219);
-            height: 1000px;
-        }
-        
-        .margin {
-            width: 15%;
-        }
-        .app_content {
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-        }
-        .title_inner_div {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            flex: 1;
-        }
+        background-color: blue;
+      }
 
-        .title {
-            color: white;
-            font-size: 4em;
-            padding-left: 30px;
-            padding-bottom: 63px;
-        }
-        
+      .character_pfp {
+        width: 90px;
+        height: 90px;
+        float: left;
+      }
+
+      .char_content {
+      }
+
+      .app_container {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        height: 1525px;
+      }
+      .app_bg_container {
+        position: absolute;
+        width: 100vw;
+      }
+
+      .hero_img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        background-size: cover;
+      }
+
+      .bg_holder {
+        background-color: rgb(5, 116, 219);
+        height: 1000px;
+      }
+
+      .margin {
+        width: 15%;
+      }
+
+      .app_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+      .title_inner_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex: 1;
+      }
+
+      .title {
+        color: #980201;
+        font-size: 4em;
+        padding-left: 30px;
+        padding-bottom: 62px;
+        background-color: #cbd9ed;
+        width: 40%;
+        height: 2%;
+        margin-bottom: 100px;
+        margin-left: 25px;
+      }
     </style>
-</body>
+  </body>
 </html>
