@@ -24,7 +24,7 @@
         </div>
         <div class="transparent_sec"></div>
         <div class="synopsis">
-          <h1 class="synopsis_title">Synopsis</h1>
+          <h2 class="synopsis_title">Synopsis</h2>
           <p class="synopsis_content">
             Woody, Buzz Lightyear and the rest of the gang embark on a road trip
             with Bonnie and a new toy named Forky. The adventurous journey turns
@@ -36,26 +36,95 @@
         </div>
 
         <div class="synopsis">
-          <h1 class="synopsis_title">Characters</h1>
+          <h2 class="synopsis_title">Characters</h2>
           <div class="character_profiles">
             <div class="charatcer_cards">
-              <h1 class="charcter_bio">Woody</h1>
+              <h3 class="charcter_bio">Woody</h3>
               <div class="char_content">
                 <img class="character_pfp" src="assets/character_woody.jpg" />
-                <h2 class="va_credits">Played by Tom Hanks</h2>
+                <p class="va_credits">Played by <a href="">Tom Hanks</a></p>
                 <p class="char_text">
-                  Woody and the gang go on a road trip with new toy Forky, who's
-                  convinced he's trash and doesn't yet understand his role in
-                  the world. Along the way, Woody is unexpectedly reunited with
-                  independent spirit Bo Peep and finds himself faced with a
-                  decision, and a future, he never imagined.
+                  He is a vintage cowboy doll that originally belonged to a boy
+                  named Andy Davis. As Andy's favorite since kindergarten, Woody
+                  served as the leader of Andy's toys, a position he upheld by
+                  looking out for each member of the group. When Andy enters
+                  adulthood and leaves for college, Woody is donated to a little
+                  girl named Bonnie Anderson. He remains with Bonnie for some
+                  time, before choosing to become an owner-less antique devoted
+                  to helping lost toys find owners, alongside his girlfriend Bo
+                  Peep.
                 </p>
               </div>
             </div>
-            <div class="charatcer_cards"></div>
-            <div class="charatcer_cards"></div>
-            <div class="charatcer_cards"></div>
+            <div class="charatcer_cards">
+              <h3 class="charcter_bio">Buzz Lightyear</h3>
+              <div class="char_content">
+                <img class="character_pfp" src="assets/character_buzz.jpg" />
+                <p class="va_credits">Played by <a href="">Tim Allen</a></p>
+                <p class="char_text">
+                  He is a spaceman action figure originally belonging to Andy
+                  Davis. Buzz was created during a time where astronauts were
+                  especially popular amongst children. His arrival in the
+                  original Toy Story created conflict with Andy's favorite toy
+                  Sheriff Woody, though this rivalry would eventually blossom
+                  into a lifelong friendship.
+                </p>
+              </div>
+            </div>
+            <div class="charatcer_cards">
+              <h3 class="charcter_bio">Forky</h3>
+              <div class="char_content">
+                <img class="character_pfp" src="assets/character_forky.jpg" />
+                <p class="va_credits">Played by <a href="">Tony Hale</a></p>
+                <p class="char_text">
+                  An actual spork-turned-craft-project, Forky is pretty sure
+                  that he doesn’t belong in Bonnie's room. Unfortunately, every
+                  time he tries to get away, Woody yanks him back into an
+                  adventure he’d rather skip. Forky is a toy that Bonnie made
+                  out of a disposable spork, so he’s facing a crisis. He wants
+                  to fulfill his purpose as a spork, but now has a new toy
+                  purpose thrust upon him.”
+                </p>
+              </div>
+            </div>
+            <div class="charatcer_cards">
+              <h3 class="charcter_bio">Bo Peep</h3>
+              <div class="char_content">
+                <img class="character_pfp" src="assets/character_bopeep.jpg" />
+                <p class="va_credits">Played by <a href="">Annie Potts</a></p>
+                <p class="char_text">
+                  Bo is the romantic interest (later girlfriend) of Woody,
+                  providing a calm and loving comfort whenever he is
+                  overwhelmed. She is noted for using her shepherdess crook to
+                  hook her cowboy and bring him closer in a romantic way. In
+                  private, she is a great deal more daring with her words and
+                  actions, which Woody seems to be quite fond of. She and her
+                  sheep were bought along with the lamp not too long after Molly
+                  was born, due to the baby being scared of the dark, which
+                  "broke every toy's heart", according to Woody. The lamp
+                  comforted Molly and she would often have her hand lay on Bo's
+                  feet.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quote">
+          <p class="woody_q">
+            <span class="woody_h">Woody:</span> “Being there for a child in the
+            most noble thing a toy can do.”
+          </p>
+        </div>
+
+        <div class="synopsis">
+          <h2 class="synopsis_title">Comments</h2>
+        </div>
+
+        <div class="comments">
+          <div class="comments_field"></div>
         </div>
       </div>
       <div class="margin"></div>
@@ -63,10 +132,48 @@
     <style>
       body {
         margin: 0px;
+        font-family: Roboto;
+        font-size: 17px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Cabin;
+        color: #960001;
+      }
+
+      h1 {
+        font-size: 70px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+
+      h3 {
+        font-size: 24px;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      p {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      a {
+        color: #e2e55f;
+        text-decoration: none;
       }
 
       .transparent_div {
         height: 525px;
+      }
+
+      .divider {
+        height: 90px;
       }
 
       .transparent_div_inner {
@@ -92,8 +199,6 @@
 
       .synopsis_content {
         color: white;
-        font-size: 26px;
-        font-weight: lighter;
       }
       /*parent div */
       .character_profiles {
@@ -105,17 +210,17 @@
       .charatcer_cards {
         flex: 1 0 40%;
         margin: 5px;
-
-        background-color: blue;
       }
 
       .character_pfp {
-        width: 90px;
-        height: 90px;
+        width: 150px;
         float: left;
+        margin-right: 15px;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.34);
       }
 
-      .char_content {
+      .va_credits {
+        padding-bottom: 10px;
       }
 
       .app_container {
@@ -123,7 +228,7 @@
         width: 100vw;
         display: flex;
         flex-direction: row;
-        height: 1525px;
+        /* height: 2525px; */
       }
       .app_bg_container {
         position: absolute;
@@ -138,8 +243,8 @@
       }
 
       .bg_holder {
-        background-color: rgb(5, 116, 219);
-        height: 1000px;
+        background-color: #5582c6;
+        height: 100vw;
       }
 
       .margin {
@@ -159,15 +264,30 @@
       }
 
       .title {
-        color: #980201;
+        color: #960001;
         font-size: 4em;
-        padding-left: 30px;
-        padding-bottom: 62px;
         background-color: #cbd9ed;
-        width: 40%;
-        height: 2%;
-        margin-bottom: 100px;
+        margin-bottom: 75px;
         margin-left: 25px;
+        width: fit-content;
+        padding: 11px;
+      }
+
+      .quote {
+        background-color: #e2e55f;
+        height: 90px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 150px;
+      }
+
+      .woody_q {
+        color: #960001;
+      }
+      .woody_h {
+        font-weight: bold;
+        color: #960001;
       }
     </style>
   </body>
