@@ -125,9 +125,13 @@
 
         <div class="comments">
           <div class="comments_field">
-            <p class="input_label" <input type="text" class="comment" />
+            <p class="input_label">How would you rate Toy Story 4?</p>
+
+            <input type="text" class="comment" />
           </div>
+          <button class="btn">Rate it</button>
         </div>
+        <h1 class="input_val"></h1>
       </div>
       <div class="margin"></div>
     </div>
@@ -168,6 +172,16 @@
       a {
         color: #e2e55f;
         text-decoration: none;
+      }
+
+      .btn {
+        width: 308px;
+        background-color: #79519f;
+        color: white;
+        border: none;
+        height: 30px;
+        margin-top: 7px;
+        font-size: 20px;
       }
 
       .transparent_div {
@@ -297,5 +311,16 @@
         height: 30px;
       }
     </style>
+
+    <script>
+      const inputref = document.querySelector("input");
+      const btnref = document.querySelector(".btn");
+      const inputvalref = document.querySelector(".input_val");
+
+      btnref.addEventListener("click", function () {
+        inputvalref.innerHTML = inputref.value;
+        inputref.value = "";
+      });
+    </script>
   </body>
 </html>
