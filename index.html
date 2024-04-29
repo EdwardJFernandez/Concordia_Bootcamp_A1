@@ -23,8 +23,8 @@
           </div>
         </div>
         <div class="transparent_sec"></div>
-        <div class="synopsis">
-          <h2 class="synopsis_title">Synopsis</h2>
+        <div class="section">
+          <h2 class="section_title">Synopsis</h2>
           <p class="synopsis_content">
             Woody, Buzz Lightyear and the rest of the gang embark on a road trip
             with Bonnie and a new toy named Forky. The adventurous journey turns
@@ -35,14 +35,34 @@
           </p>
         </div>
 
-        <div class="synopsis">
-          <h2 class="synopsis_title">Characters</h2>
+        <div class="section">
+          <h2 class="section_title">Characters</h2>
           <div class="character_profiles">
             <div class="charatcer_cards">
               <h3 class="charcter_bio">Woody</h3>
               <div class="char_content">
                 <img class="character_pfp" src="assets/character_woody.jpg" />
-                <p class="va_credits">Played by <a href="">Tom Hanks</a></p>
+                <div class="tooltip">
+                  Played by:
+                  <a class="actor" href=""
+                    >Tom Hanks
+                    <div class="tooltip_info">
+                      <div class="actor_pfp">
+                        <img src="assets/tom_hanks_pfp.jpg" />
+                      </div>
+                      <div class="actor_summary">
+                        <p class="summary_content">
+                          Thomas Jeffrey Hanks was born in Concord, California,
+                          to Janet Marylyn (Frager), a hospital worker, and Amos
+                          Mefford Hanks, an itinerant cook. His mother's family,
+                          originally surnamed "Fraga", was entirely Portuguese,
+                          while his father was of mostly English ancestry...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- <p class="va_credits">Played by <a href="">Tom Hanks</a></p> -->
                 <p class="char_text">
                   He is a vintage cowboy doll that originally belonged to a boy
                   named Andy Davis. As Andy's favorite since kindergarten, Woody
@@ -60,7 +80,28 @@
               <h3 class="charcter_bio">Buzz Lightyear</h3>
               <div class="char_content">
                 <img class="character_pfp" src="assets/character_buzz.jpg" />
-                <p class="va_credits">Played by <a href="">Tim Allen</a></p>
+                <div class="tooltip">
+                  Played by:
+                  <a class="actor" href=""
+                    >Tim Allen
+                    <div class="tooltip_info">
+                      <div class="actor_pfp">
+                        <img src="assets/tim_allen.jpg" />
+                      </div>
+                      <div class="actor_summary">
+                        <p class="summary_content">
+                          Timothy Allen Dick was born on June 13, 1953, in
+                          Denver, Colorado, to Martha Katherine (Fox) and Gerald
+                          M. Dick. His father, a real estate salesman, was
+                          killed in a collision with a drunk driver while
+                          driving his family home from a University of Colorado
+                          football game, when Tim was eleven years old...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- <p class="va_credits">Played by <a href="">Tim Allen</a></p> -->
                 <p class="char_text">
                   He is a spaceman action figure originally belonging to Andy
                   Davis. Buzz was created during a time where astronauts were
@@ -75,7 +116,26 @@
               <h3 class="charcter_bio">Forky</h3>
               <div class="char_content">
                 <img class="character_pfp" src="assets/character_forky.jpg" />
-                <p class="va_credits">Played by <a href="">Tony Hale</a></p>
+                <div class="tooltip">
+                  Played by:
+                  <a class="actor" href=""
+                    >Tony Hale
+                    <div class="tooltip_info">
+                      <div class="actor_pfp">
+                        <img src="assets/tony_hale.jpg" />
+                      </div>
+                      <div class="actor_summary">
+                        <p class="summary_content">
+                          Tony Hale was born on 30 September 1970 in West Point,
+                          New York, USA. He is an actor and producer, known for
+                          Arrested Development (2003), Veep (2012) and Toy Story
+                          4...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- <p class="va_credits">Played by <a href="">Tony Hale</a></p> -->
                 <p class="char_text">
                   An actual spork-turned-craft-project, Forky is pretty sure
                   that he doesn’t belong in Bonnie's room. Unfortunately, every
@@ -91,7 +151,30 @@
               <h3 class="charcter_bio">Bo Peep</h3>
               <div class="char_content">
                 <img class="character_pfp" src="assets/character_bopeep.jpg" />
-                <p class="va_credits">Played by <a href="">Annie Potts</a></p>
+                <div class="tooltip">
+                  Played by:
+                  <a class="actor" href=""
+                    >Annie Potts
+                    <div class="tooltip_info">
+                      <div class="actor_pfp">
+                        <img src="assets/annie.jpg" />
+                      </div>
+                      <div class="actor_summary">
+                        <p class="summary_content">
+                          Annie Potts is an American film, television, and stage
+                          actress. She is known for her roles in popular 1980s
+                          films such as Ghostbusters (1984) and Pretty in Pink
+                          (1986). She made her debut on the big screen in 1978
+                          in the Metro-Goldwyn-Mayer comedy film Corvette Summer
+                          (1978), with Mark Hamill, for which she was nominated
+                          for a Golden Globe...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- <p class="va_credits">Played by <a href="">Annie Potts</a></p> -->
                 <p class="char_text">
                   Bo is the romantic interest (later girlfriend) of Woody,
                   providing a calm and loving comfort whenever he is
@@ -119,8 +202,8 @@
           </p>
         </div>
 
-        <div class="synopsis">
-          <h2 class="synopsis_title">Comments</h2>
+        <div class="section">
+          <h2 class="section_title">Comments</h2>
         </div>
 
         <div class="comments">
@@ -206,7 +289,7 @@
         flex-direction: row;
       }
 
-      .synopsis_title {
+      .section_title {
         color: #8d050c;
         font-size: 45px;
         border-bottom: 3px solid #8cb9aa;
@@ -314,6 +397,44 @@
       .input_val {
         justify-content: center;
         display: flex;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .actor {
+        border-bottom: 1px solid #e2e55f;
+      }
+
+      .tooltip_info {
+        display: flex;
+        text-align: left;
+        visibility: hidden;
+        width: 590px;
+        background-color: #7eacf2;
+        color: white;
+        border-radius: 6px;
+        padding: 21px 25px;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+      }
+
+      .actor:hover .tooltip_info {
+        visibility: visible;
+      }
+
+      .actor_pfp img {
+        border-radius: 50%;
+        float: left;
+      }
+
+      .summary_content {
+        padding-left: 20px;
       }
     </style>
 
