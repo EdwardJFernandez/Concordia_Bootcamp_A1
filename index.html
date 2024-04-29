@@ -131,7 +131,7 @@
           </div>
           <button class="btn">Rate it</button>
         </div>
-        <h1 class="input_val"></h1>
+        <p class="input_val"></p>
       </div>
       <div class="margin"></div>
     </div>
@@ -310,6 +310,11 @@
         width: 300px;
         height: 30px;
       }
+
+      .input_val {
+        justify-content: center;
+        display: flex;
+      }
     </style>
 
     <script>
@@ -318,7 +323,7 @@
       const inputvalref = document.querySelector(".input_val");
 
       btnref.addEventListener("click", function () {
-        inputvalref.innerHTML = inputref.value;
+        inputvalref.innerHTML = "You said it was " + inputref.value + "!";
         inputref.value = "";
       });
     </script>
